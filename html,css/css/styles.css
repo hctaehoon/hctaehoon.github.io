@@ -1,0 +1,69 @@
+@import "reset.css";
+/* 리셋 css적용. (마진을 0으로 만드는 유용한 방법 */
+@import "variables.css";
+
+
+
+/* components */
+@import "components/status-bar.css";
+/*status-bar부분을 따로 만들어 불러오기   */
+@import "components/nav-bar.css";
+/*네비게이션 바 임포트 후 사용. (순서도 중요) */
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen__header.css";
+@import "components/no-mobile.css";
+/* screen */
+
+@import "screens/login.css ";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#2e363e;
+  background-color: rgb(246, 225, 18,0.3);
+  background-image: url(https://cdn.pixabay.com/photo/2014/12/21/23/39/bananas-575773_1280.png);
+  background-size: contain;
+  background-repeat:round;
+  opacity: 0.9;
+  height: 110vh;
+  
+  }
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.welcome-header {
+  margin: 90px 0px;
+  /* 상하 90px, 좌우 0px */
+  text-align: center;
+  /* 얼라인:나란히하다 */
+  /* flex를 써도 되지만, h1이나 p 같은 형태여서 위 코드 씀 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 위 네개는 복습을 통해 잘 알아봐야겠다.어려워서.. */
+  font-weight:500;
+  /* 폰트 굵기 */
+}
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+
+}
+
+.welcome-header__text {
+  width:60%;
+  opacity:0.4;
+  /* 불투명함 */
+}
+
+/*폰트 패밀리를 통해 글꼴 이쁘게 변경. 
+구글 폰트에 가서 css 링크 복사 후 붙여넣기 해도 가능!*/

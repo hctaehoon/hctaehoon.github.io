@@ -1,0 +1,55 @@
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+} 
+#login-form input {
+  border:none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  
+ 
+}
+#login-form input:not([type="submit"]) {
+  border-bottom:1px solid rgba(0,0,0,0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+/* not에 대한 적용. submit이 아닐 때의 속성.. 사실
+어렵다 이해하기가 */
+#login-form input::placeholder {
+  color:grey;
+  opacity: 0.5;
+  /* 플레이스홀더 ( 미리 위치 한 글귀 색상)
+  그리고 opacity는 투명도 설정 */
+}
+#login-form input:focus {
+  border-color:var(--yellow);
+/* 인풋 칸이 활성화 되었을 때 색상 */
+
+}
+#login-form input[type="submit"]{
+  background-color: var(--yellow);
+  cursor:pointer;
+  padding: 20px 0px;
+  
+ 
+  /* var(--value)는 미리 설정해둔 내 색상
+  그리고 커서는 내가 지정한곳에서 마우스포인터 변경 */
+}
+#login-form a{
+  text-align: center;
+  text-decoration: none;
+  color:inherit;
+  /* inherit 상속 
+  */
+  font-size: 13px;
+}
+
+/* 
+.login-form__input 
+.login-form__btn 
+.login-form__a 처럼 쓰는 게 더 효율적이다.
+/* login-form라는 id를 가진 form 들 , 그 중 input
+칸에 설정을 바꿈 : border경계선을 없애고 밑에는 1px짜리로 만들었고
+플레이스홀더를 투명도를 설정해서 구현. */

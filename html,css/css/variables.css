@@ -1,0 +1,7 @@
+:root {
+   --yellow:#F6E112;
+   --horizontal-space:25px;
+   --main-border: 1px solid rgba(155, 251, 12, 0.9);
+}
+
+/* 변수를 만들어서 styles.cs에 import해줘서 사용 */
