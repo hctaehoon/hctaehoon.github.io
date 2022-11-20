@@ -1,0 +1,58 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(173, 255, 47,0.4);
+  padding: 20px 50px;
+  box-sizing: border-box;
+  /* 내가 padding을 줘도 신경쓰지마 내 박스 늘리지마.
+  그래서 짤린 오른쪽 ... 아이콘이 살아날 수 있음 */
+  border-top: 1px solid olivedrab;
+  
+
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  position:relative;
+  color:#2e363e;
+
+}
+.nav__notification {
+  
+  position: absolute;
+  left:15px;
+  bottom:15px;
+}
+
+/* .nav__redspot {
+  background-color: tomato;
+  width:6px;
+  height:6px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:red;
+  font-weight: 600;
+  position: absolute;
+  left:28px;
+  bottom:20px; */
+  /* 직접 만든 reddot..  */
+
+  /*오타 잘 찾아보기.. *
+  중요 내용: 원으로 만들기-width/2
+  display 플렉스 후 중심축 잡아주고.
+  폰트 굵기 설정 후 포지션 정해주기 ( relative,absolute 활용)
+  /
+  
+  
+  
+  /* span은 block이 아니라. 디스플레이값 변경해야
+  width, height 적용 가능 */
+
+/* 네비게이션 리스트들 옆으로 나란히.
+ *수평방향 정렬방식 > 사이 여백 일정하게!/
